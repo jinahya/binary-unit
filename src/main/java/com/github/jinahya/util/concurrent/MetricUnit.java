@@ -18,6 +18,7 @@
 package com.github.jinahya.util.concurrent;
 
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 
@@ -562,6 +563,44 @@ public enum MetricUnit {
         };
 
 
+    static final BigDecimal d = BigDecimal.valueOf(0.1d);
+
+
+    static final BigDecimal c = d.multiply(d);
+
+
+    static final BigDecimal m = c.multiply(d);
+
+
+    static final BigDecimal μ = m.multiply(d);
+
+
+    static final BigDecimal n = μ.multiply(d);
+
+
+    static final BigDecimal p = n.multiply(d);
+
+
+    static final BigDecimal f = p.multiply(d);
+
+
+    static final BigDecimal a = f.multiply(d);
+
+
+    static final BigDecimal z = a.multiply(d);
+
+
+    static final BigDecimal y = z.multiply(d);
+
+
+    // -------------------------------------------------------------------------
+    static final BigInteger da = BigInteger.valueOf(10L);
+
+
+    static final BigInteger h = BigInteger.valueOf(100L);
+
+
+    // -------------------------------------------------------------------------
     static final BigInteger k = BigInteger.valueOf(1000L);
 
 
